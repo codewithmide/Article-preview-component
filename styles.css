@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(212, 23%, 69%);
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: hsl(210, 46%, 95%);
+    width: 55%;
+    height: 40%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+}
+
+.left {
+    width: 40%;
+    background: url(./images/drawers.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+
+.right {
+    height: 100%;
+    width: 60%;
+    padding: 25px 40px 30px 30px;
+    color: hsl(217, 19%, 35%);
+    text-align: left;
+}
+
+h4 {
+    margin-bottom: .5rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    width: 100%;
+    color: hsl(214, 17%, 51%);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+h5 {
+    font-weight: 700;
+    width: 100%;
+}
+
+.name-and-date {
+    display: flex;
+    gap: 1rem;
+}
+
+.text {
+    text-align: left;
+    height: inherit;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.share-image {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: hsla(212, 23%, 69%, 0.39);
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+.share-image:hover {
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+}
+
+.hidden {
+    display: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
