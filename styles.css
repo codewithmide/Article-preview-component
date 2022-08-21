@@ -126,13 +126,65 @@ h5 {
     color: hsl(228, 45%, 44%);
 }
 
-.hidden {
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.share-paragraph {
+    padding: 0;
+    margin-right: 0;
+    font-size: 11px;
+    letter-spacing: .5rem;
+    font-weight: lighter;
+}
+
+#social-link {
+    font-size: 20px;
+}
+
+#close-image {
+    padding: 12px;
+    font-size: 16px;
+}
+
+#hidden {
     display: none;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 25%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.share-paragraph {
+    padding: 0;
+    margin-right: 0;
+    font-size: 11px;
+    letter-spacing: .5rem;
 }
 
 @media screen and (max-width: 600px) { 
     .container {
-        display: inline-block;
+        display: block;
         width: 90%;
         height: 60%;
     }
@@ -167,7 +219,7 @@ h5 {
     }
 
     #share-image {
-        padding: 20px;
+        padding: 13px;
         font-size: 14px;
         margin-top: auto;
         margin-bottom: auto;
@@ -177,6 +229,9 @@ h5 {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        padding: 15px;
     }
 
     .name-and-date {
@@ -185,10 +240,6 @@ h5 {
 
     h5 {
         font-size: .7rem;
-    }
-
-    .hidden {
-        display: none;
     }
 
     .share {
@@ -200,7 +251,7 @@ h5 {
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 25%;
+        height: 22%;
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
     }
@@ -210,7 +261,6 @@ h5 {
         margin-right: 0;
         font-size: 11px;
         letter-spacing: .5rem;
-        font-weight: lighter;
     }
 
     #social-link {
@@ -218,7 +268,12 @@ h5 {
     }
 
     #close-image {
-        padding: 12px;
+        padding: 11px;
         font-size: 16px;
+        flex-direction: flex-end;
+    }
+
+    .hidden {
+        display: none;
     }
 }

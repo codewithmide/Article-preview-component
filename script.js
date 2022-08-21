@@ -6,3 +6,4 @@ shareButton.addEventListener("click", () => {
     shareContainer.classList.remove("hidden")
     infoContainer.style.display = "none"
 });
+
